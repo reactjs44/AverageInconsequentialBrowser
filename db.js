@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 
  
-mongoose.connect(mongodbURL);
+mongoose.connect(process.env.mongodbURL);
 
 
 const db=mongoose.connection;
