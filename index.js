@@ -41,6 +41,6 @@ app.get("/", (req, res) => {
 
 app.use("/person", middleWare, personRoutes);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log("Express server initialized");
 });
