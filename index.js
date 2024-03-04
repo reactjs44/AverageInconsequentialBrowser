@@ -35,7 +35,7 @@ passport.use(
 );
 
 const middleWare = passport.authenticate("local", { session: false });
-app.get("/", middleWare, (req, res) => {
+app.get("/", (req, res) => {
   res.send("server is running");
 });
 
