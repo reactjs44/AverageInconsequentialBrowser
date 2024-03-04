@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/person", middleWare, personRoutes);
-
-app.listen(3000, () => {
+ const PORT=3000;
+app.listen(PORT, () => {
   console.log("Express server initialized");
 });
